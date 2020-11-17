@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:nth-child(1)::before{content:"\2018"}
+        p:nth-child(1)::after{content:"\2019"}
+        p:nth-child(2)::after{content:"\201A"}
+        p:nth-child(2)::before{content:"\201A"}
+        p:nth-child(3)::after{content:"\201C"}
+        p:nth-child(3)::before{content:"\201C"}
+        p:nth-child(4)::after{content:"\201E"}
+        p:nth-child(4)::before{content:"\201E"}
+        p:nth-child(5)::after{content:"\00bb"}
+        p:nth-child(5)::before{content:"\00ab"}
+        
+    </style>
+</head>
+<body>
+    <p>Левая и правая одинарные кавычки</p>
+    <p>Нижняя одиночная кавычка</p>
+    <p>Левая и правая двойные кавычки</p>
+    <p>Нижняя двойная кавычка</p>
+    <p>Левая и правая двойные угловые кавычки</p>
+</body>
+</html>

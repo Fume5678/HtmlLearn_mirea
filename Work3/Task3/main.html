@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            margin-top: 45px;
+            text-align:center;
+            font-family: 'Titan One', cursive;
+            font-size: 24px;
+            color: #000;
+            text-shadow:  1px  1px 2px blue;
+        }
+
+
+        img{
+            display: block;
+            width:400px;
+            height:256px;
+            margin: 10px auto;
+            /* box-shadow:  8px  0px 10px 0px blue,
+             -8px  0px 10px 0px red,
+              8px  8px 10px 0px yellow,
+              0px -8px 10px 0px green;
+             */
+
+             animation: animatedShadow 1s linear infinite;
+        }
+        
+        
+        img:hover{
+             animation: animatedShadowHover 1s linear infinite;
+        }
+
+        .image-box{
+            margin-top: 50px;
+            width: 100%;
+        }
+
+
+    @keyframes animatedShadow {
+        0% {
+            box-shadow:  8px  0px 10px 0px blue,
+                -8px  0px 10px 0px red,
+                8px  8px 10px 0px yellow,
+                0px -8px 10px 0px green;
+                
+        }
+        25% {
+            box-shadow:  16px  0px 10px 0px green,
+                -16px  0px 10px 0px blue,
+                16px  16px 10px 0px red,
+                0px -16px 10px 0px yellow;
+        }
+
+        50% {
+            box-shadow:  8px  0px 20px 0px yellow,
+                -8px  0px 20px 0px green,
+                8px  8px 20px 0px blue,
+                0px -8px 20px 0px red;
+        }
+
+        75% {
+            box-shadow:  16px  0px 10px 0px red,
+                -16px  0px 10px 0px yellow,
+                16px  16px 10px 0px green,
+                0px -16px 10px 0px blue;
+        }
+        100% {
+            box-shadow:  8px  0px 20px 0px blue,
+                -8px  0px 20px 0px red,
+                8px  8px 20px 0px yellow,
+                0px -8px 20px 0px green;
+        }
+    }
+
+    @keyframes animatedShadowHover {
+        0% {
+            box-shadow:  8px  0px 10px 0px blueviolet,
+                -8px  0px 10px 0px coral,
+                8px  8px 10px 0px cyan,
+                0px -8px 10px 0px crimson;
+                
+        }
+        25% {
+            box-shadow:  16px  0px 10px 0px crimson,
+                -16px  0px 10px 0px blueviolet,
+                16px  16px 10px 0px coral,
+                0px -8px 10px 0px cyan;
+        }
+
+        50% {
+            box-shadow:  8px  0px 10px 0px cyan,
+                -8px  0px 10px 0px crimson,
+                8px  8px 10px 0px blueviolet,
+                0px -8px 10px 0px coral;
+        }
+
+        75% {
+            box-shadow:  16px  0px 10px 0px coral,
+                -16px  0px 10px 0px cyan,
+                16px  16px 10px 0px crimson,
+                0px -16px 10px 0px blueviolet;
+        }
+        100% {
+            box-shadow:  8px  0px 10px 0px blueviolet,
+                -8px  0px 10px 0px coral,
+                8px  8px 10px 0px cyan,
+                0px -8px 10px 0px crimson;
+        }
+    }
+
+    .text-box {
+        display: block;
+        width: 300px;
+        height: 100px;
+        animation: animatedShadowHover 1s linear infinite;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .text-box p {
+        padding-top: 30px;
+        vertical-align: middle;
+    }
+
+    .text {
+        width: 100%;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="image-box">
+        <img id="disco-image" src="eyes.png" alt="eyes">
+    </div>
+    <div class="text">
+        <div class="text-box">
+            <p>Gloooooow!</p>
+        </div>
+    </div>
+</body>
+</html>

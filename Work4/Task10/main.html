@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+        }
+
+        h2 {
+            font-family: monospace;
+            color: #606060;
+        }
+
+        nav {
+            width: 660px;
+            margin: 0 auto 30px;
+        }
+
+        .topmenu > li {
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;
+        }
+        .topmenu > li:last-child {
+            margin-right: 0;
+        }
+        
+        a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            outline: none;
+            font-family: 'Lora', serif;
+        }
+
+        .fa {
+            font-family: "FontAwesome";
+            color: inherit;
+            padding-left: 10px;
+        }
+
+        .submenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+        }
+
+        .two ul {
+        background: #ECDAD6;
+        }
+        .two ul a {
+        color: #695753;
+        }
+
+        .two .submenu {
+            display: none;
+            background: #b19891;
+        }
+        .two ul li:hover .submenu {
+           display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="two">
+
+        <ul class="topmenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">About<i class="fa fa-angle-down"></i></a>
+            <ul class="submenu">
+              <li><a href="">Item 1</a></li>
+              <li><a href="">Item 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+</body>
+</html>

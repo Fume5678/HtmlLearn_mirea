@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>        
+        .psevdo-table {
+            flex-direction: row;
+        }
+
+        .first{
+            order: 1;
+        }
+            
+        .second{
+             order: 2;
+        }
+
+        input:checked + .first{
+            font-weight: bold;
+            background: yellow;
+        }
+
+        ToDo изменить задний фон
+
+        input[type=submit]{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="psevdo-table">
+            <input class="second" type="checkbox" id="name" name="name" required>
+            <label class="first" for="name">html</label><br><br>
+            
+        </div>
+
+        <div class="psevdo-table">
+            <input class="second" type="checkbox" id="mail" name="mail" required>
+            <label class="first"  for="mail">css</label><br><br>
+        </div>  
+
+        <div class="psevdo-table">
+            <input class="second" type="checkbox" id="numb" name="numb">
+            <label class="first"  for="numb">js</label><br><br>
+        </div>
+
+        <div  class="psevdo-table">
+            <input class="second" type="checkbox" id="pass" name="pass" required>
+            <label class="first"  for="pass">Password*</label><br><br>
+        </div>
+
+        <input type="submit"> 
+    </form>
+</body>
+</html>

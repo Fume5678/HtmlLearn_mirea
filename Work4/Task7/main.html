@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            width: 90%;
+            background: white;
+            border: none;
+            margin: 10px auto;
+        }
+
+        td{
+            height: 200px;
+            border: none;
+            width: 100px;
+            align-items: center;
+            vertical-align: text-top;
+            text-align: center;
+        }
+
+        td:hover{
+            border: 1px solid black;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .date {
+            color: darkgray;
+            text-align: left;
+        }
+
+        .weather-icon{
+            width: 32px;
+            height: 32px;
+            text-align: center;
+        }
+
+        .day-type{
+            text-align: left;
+        }
+
+        .day-temp::after{
+            content:"\00b0";
+        }
+
+        .day-temp{
+            margin-bottom: 5px;
+        }
+
+        .night-temp::after{
+            content:"\00b0";
+        }
+
+        .night-temp{
+            color: darkgray;
+            margin: 0px;
+        }
+
+        .tips{
+            text-align: left;
+            color: darkgray;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">Прогноз погоды на 8 дней</h1>
+    <table>
+        <td>
+            <h3 class="day-type">Сегодня</h3>
+            <p class="date">29 sept</p>
+            <img id='icon-1' class="weather-icon" src="suncloud.jpg" >
+            <h4 class="day-temp">Днем +29 C</h4>
+            <h5 class="night-temp">Ночью +20 C</h5>
+            <p class="tips">Облачно и солнечно</p>
+        </td>
+        <td>
+            <h3 class="day-type">Понедельник</h3>
+            <p class="date">30 sept</p>
+            <img id='icon-2' class="weather-icon" src="sun.jpg">
+            <h4 class="day-temp">+28 C</h4>
+            <h5 class="night-temp">+3 C</h5>
+            <p class="tips">Солнечно</p>
+        </td>
+        <td>
+            <h3 class="day-type">Вторник</h3>
+            <p class="date">31 sept</p>
+            <img id='icon-3' class="weather-icon" src="cloud.jpg">
+            <h4 class="day-temp">+12 C</h4>
+            <h5 class="night-temp">+8 C</h5>
+            <p class="tips">Облачно</p>
+        </td>
+        <td>
+            <h3 class="day-type">Среда</h3>
+            <p class="date">32 sept</p>
+            <img id='icon-4' class="weather-icon" src="rain.jpg">
+            <h4 class="day-temp">+10 C</h4>
+            <h5 class="night-temp">+100 C</h5>
+            <p class="tips">C осадкой</p>
+        </td>
+        <td>
+            <h3 class="day-type">Четверг</h3>
+            <p class="date">33 sept</p>
+            <img id='icon-5' class="weather-icon" src="rain.jpg">
+            <h4 class="day-temp">+100 C</h4>
+            <h5 class="night-temp">+101 C</h5>
+            <p class="tips">C осадкой</p>
+        </td>
+        <td>
+            <h3 class="day-type">Пятница</h3>
+            <p class="date">1 dec</p>
+            <img id='icon-6' class="weather-icon" src="sun.jpg">
+            <h4 class="day-temp">-10 C</h4>
+            <h5 class="night-temp">+3 C</h5>
+            <p class="tips">Солнечно</p>
+        </td>
+        <td>
+            <h3 class="day-type">Суббота</h3>
+            <p class="date">2 dec</p>
+            <img id='icon-7' class="weather-icon" src="cloud.jpg">
+            <h4 class="day-temp">0 C</h4>
+            <h5 class="night-temp">+15 C</h5>
+            <p class="tips">Облачно</p>
+        </td>
+        <td>
+            <h3 class="day-type">Воскрессенье</h3>
+            <p class="date">3 dec</p>
+            <img id='icon-8' class="weather-icon" src="cloud.jpg">
+            <h4 class="day-temp">+1 C</h4>
+            <h5 class="night-temp">-2 C</h5>
+            <p class="tips">Облачно</p>
+        </td>
+    </table>
+</body>
+</html>

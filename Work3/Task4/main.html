@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cards::after{
+            /* Карточне масти*/
+            content: '\2660' '\2661' '\2662' '\2663';
+        }
+
+        #grech::after{
+            /* Греческие буквы */
+            content: '\0391' '\0392' '\0393' '\0394' '\0395';
+        }
+
+        #money::after{
+            /* Денежные еденицы */
+            content: '\A2' '\A3' '\A4' '\A5' '\24';
+        }
+
+        #trademark::after{
+            /* Торговые марки */
+            content: '\A9' '\AE';
+        }
+
+        #drob::after{
+            /* Дроби */
+            content: '\BC' '\BD' '\BE';
+        }
+
+        #random::before{
+            /* Знак переноса, параграфа, дефиса и тире */
+            content: '\B6' '\A7' '\2013' '\A0' '\2014';
+        }
+
+        #useful::after{
+            /* Разные погодные знаки */
+            content: '\263c' '\2601' '\2744' '\2745' '\2602';
+        }
+    </style>
+</head>
+<body>
+    <p id="cards"> Знаки карточных мастей </p>
+
+    <p class="" id="grech"> Первые пять букв греческого </p>
+
+    <p class="" id="money"> Денежные символы </p>
+
+    <p class="" id="trademark"> Торговые марки </p>
+
+    <p class="" id="drob"> Дроби </p>
+
+    <p class="" id="random"> разные знаки</p>
+
+    <p class="" id="useful"> Полезные знаки на мой выбор: </p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>        
+        
+
+        input:valid + label::before{
+            color: greenyellow;
+            content: '\2714';
+        }
+
+        
+        input:invalid + label::before{
+            color: red;
+            content: '\2716';
+        }
+        
+
+        input[type=submit]{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="psevdo-table">
+            <label class="first" for="name">Name *</label>
+            <input class="second" type="name" id="name" name="name" required>
+            <label class="first" for="name"></label><br><br>
+            
+        </div>
+
+        <div class="psevdo-table">
+            <label class="first"  for="mail">Mail*</label>
+            <input class="second" type="email" id="mail" name="mail" required>
+            <label class="first"  for="mail"></label><br><br>
+        </div>  
+
+        <div class="psevdo-table">
+            <label class="first"  for="numb">Number</label>
+            <input class="second" type="number" id="numb" name="numb">
+            <label class="first"  for="numb"></label><br><br>
+        </div>
+
+        <div  class="psevdo-table">
+            <label class="first"  for="pass">Password*</label>
+            <input class="second" type="password" id="pass" name="pass" required>
+            <label class="first"  for="pass"></label><br><br>
+        </div>
+
+        <input type="submit"> 
+    </form>
+</body>
+</html>

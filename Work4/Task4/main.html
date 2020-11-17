@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bat {
+            position: relative;
+            width: 350px;
+            height: 50px;
+            margin: 10px 0px;
+            border: 0.2em solid #2c2c2c;
+        }
+    
+        .bat:after {
+            content: '\002b';
+            padding-left: 2px;
+            color: white;
+            display: block;
+            position: relative;
+            top: 15px;
+            left: 350px;
+            background: #2c2c2c;
+            width: 10px;
+            height: 20px;
+        }
+        
+        .bat:before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            background: #2c2c2c;
+        }
+
+        .low:before{
+            width: 20%;
+            background:tomato;
+        }
+
+        .middle:before{
+            width: 50%;
+            background: gold;
+        }
+
+        .hign:before {
+            width: 100%;
+            background:lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="bat low"></div>
+    <div class="bat middle"></div>
+    <div class="bat hign"></div>
+</body>
+</html>

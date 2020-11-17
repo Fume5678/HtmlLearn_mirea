@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #vinus {
+            font-family: "Arial";
+            border-collapse: collapse;
+            width: 100%;
+            text-align: left;
+        }
+
+        #vinus td, #vinus th{
+            border: 1px solid darkgray;
+            padding: 8px
+        }
+
+        #vinus tr:nth-child(even){
+            background: #ffa;
+        }
+
+        #vinus tr:nth-child(odd){
+            background: #eea;
+        }
+
+        #vinus tr:hover {background-color: #dda;}
+
+        #vinus th{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background: white;
+        }
+
+        #vinus-by-sort {
+            margin-top: 20px;
+            font-family: "Arial";
+            text-align: center;
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid steelblue;
+        }
+
+        #vinus-by-sort th, #vinus-by-sort td{
+            padding: 5px;
+            margin: 5px;
+            background: lightsteelblue;
+            border-right: 2px solid lightslategray;
+        }
+
+        #vinus-by-sort th{
+            background: rgb(155, 174, 201);
+        }
+
+        #vinus-by-sort td:hover{
+            background: lightslategray;
+        }
+
+        #vinus-by-sort .last {
+            border-right: 0px solid red;
+        }
+
+        .head {
+            margin: 0px 30px;
+            border-bottom: 4px solid white;
+            border-radius: 20%;
+        }
+
+    </style>
+</head>
+<body>
+    <table id="vinus">
+        <tr>
+            <th>Название</th>
+            <th>Место производства</th>
+            <th>Цена</th>
+        </tr>
+        <tr>
+            <td>Амбруа-Дюрсо</td>
+            <td>Краснодарский край</td>
+            <td>900 руб.</td>
+        </tr>
+        <tr>
+            <td>Вилла Виктория</td>
+            <td>Краснодарский край</td>
+            <td>800 руб.</td>
+        </tr>
+        <tr>
+            <td>Новый свет</td>
+            <td>Крым</td>
+            <td>400 руб.</td>
+        </tr>
+        <tr>
+            <td>Саук-Дере</td>
+            <td>Крым</td>
+            <td>230-1150 руб.</td>
+        </tr>
+        <tr>
+            <td>Виноделная ВедирниковЪ</td>
+            <td>Ростовская область</td>
+            <td>600 руб.</td>
+        </tr>
+    </table>
+
+    <table id="vinus-by-sort">
+        <tr>
+            <th><div class="head">Красные сухие</div></th>
+            <th><div class="head">Красные сладкие</div></th>
+            <th><div class="head">Белые сухие</div></th>
+            <th class="last"><div class="head">Красные полусладкие</div></th>
+        </tr>
+        <tr>
+            <td>Ренессанс Раевское</td>
+            <td>Lambrusco</td>
+            <td>Bosio Gavi</td>
+            <td class="last">Розовый Мускат</td>
+        </tr>
+        <tr>
+            <td>Усадьба Дивноморское</td>
+            <td>Banyuls</td>
+            <td>Pratello Lugana</td>
+            <td class="last">Изабелла</td>
+        </tr>
+        <tr>
+            <td>Каберне Совиньон</td>
+            <td>Abbazia Moscato Rose</td>
+            <td>Arabarte Blanco</td>
+            <td class="last">Кокур черный</td>
+        </tr>
+    </table>
+</body>
+</html>

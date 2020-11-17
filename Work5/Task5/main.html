@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function HtSec(hours){
+            return hours * 60 * 60;
+        }
+
+        function DtH(days){
+            return days * 24;
+        }
+
+        function MtD(NumMonth){
+            number = parseInt(NumMonth);
+            switch (number){
+                case 1:
+                    return 31;
+                case 2: 
+                    return 28;
+                case 3: 
+                    return 31;
+                case 4: 
+                    return 30;
+                case 5: 
+                    return 31;
+                case 6: 
+                    return 30;
+                case 7: 
+                    return 31;
+                case 8: 
+                    return 31;
+                case 9: 
+                    return 30;
+                case 10: 
+                    return 31;
+                case 11: 
+                    return 30;
+                case 12: 
+                    return 31;
+            }
+
+            return 0;
+        }
+
+        function DtSec(days){
+            hours = DtH(days);
+            return HtSec(hours);
+        }
+        
+        function MtSec(NumMonth){
+            days = MtD(NumMonth);
+            hours = DtH(days);
+            return HtSec(hours);
+        }
+
+        alert("5.1 24 hours to sec: \n" + HtSec(24));
+        alert("5.1 1 day to sec: \n" + DtSec(1));
+        alert("5.1 january to sec: \n" + MtSec(1));
+
+        today = new Date();
+        hours = today.getHours();
+        minutes = today.getMinutes();
+        seconds = today.getSeconds();
+        alert("5.2 Current time: " + hours + ":" + minutes + ":" + seconds);
+
+        numForQuad = 2;
+        alert("5.3 result " + Math.pow(numForQuad, 2));
+    </script>
+</body>
+</html>

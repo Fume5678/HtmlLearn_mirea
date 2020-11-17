@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shape,
+        .radial-graph,
+        .cutout,
+        .start,
+        .end {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+        }
+
+        .shape{
+            position: absolute;
+            background-color: gray;
+        }
+
+        .start{
+            position: absolute;
+            clip: rect(0px, 280px, 140px, 0px);
+            transform: rotate(30deg);
+            background-color: green;
+        }
+
+        .end {
+            position: absolute;
+            clip: rect(140px, 280px, 280px, 0px);
+            transform: rotate(45deg);
+            background-color: green;
+        }
+
+        .cutout{
+            margin: 40px;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            color: gray;
+            font-size: 30px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="radial-graph">
+        <div class="shape"> 
+            <div class="start"></div>
+            <div class="end"></div>
+        </div>
+        <div class=cutout>90<sub>&plusmn50</sub> (%)</div>    
+    </div>
+</body>
+</html>

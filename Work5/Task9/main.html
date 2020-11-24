@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        var arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+        console.log(`9.1: ${arr[1][0]} \n`);
+
+        var obj1 = { js: ['jQuery', 'Angular'], php: 'hello', css: 'world' };
+        console.log(`9.2: ${obj1.js[0]} \n`);
+
+        var weekDay = {
+            ru: ['Понедилок', "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскрессенье"],
+            en: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        };
+        console.log(`9.3:\n ${weekDay.ru[0]} \n ${weekDay.en[1]}`);
+
+        var lang = prompt("lang (ru\\en)");
+        var day = parseInt(prompt("dat (1-7)"));
+        day--;
+        console.log(`9.4: ${weekDay[lang][day]}\n`);
+
+    </script>
+</body>
+
+</html>

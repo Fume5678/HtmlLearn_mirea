@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obj = { a: 1, b: 2, c: 3 };
+        alert("8.1: " + obj['c'] + "\n" + obj.c);
+
+        var obj2 = { Коля: '1000', Вася: '500', Петя: "200" };
+        alert("8.2: " + obj2['Коля'] + "\n" + obj2.Петя);
+
+        var days = { 1: "Понедельник", 2: "Вторник", 3: "Среда", 4: "Четверг", 5: "Пятница", 6: "Суббота", 7: "Воскрессенье" }
+        today = new Date();
+        day = today.getDay();
+        alert("8.3 - 8.4: Сегодня - " + days[day]);
+    </script>
+</body>
+
+</html>

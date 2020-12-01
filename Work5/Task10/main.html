@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var msg = ""; // Собираем одно большое сообщеия для вывода в консоль или алерт
+        var tr = "Верно";
+        var fl = "Неверно";
+        let a = 1;
+        let b = 0;
+        let c = -3;
+
+
+        function task1(a) {
+            msg += "\n10.1: a = " + a + " ";
+            if (a == 0)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        function task2(a) {
+            msg += "\n10.2: a = " + a + " ";
+            if (a > 0)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        function task3(a) {
+            msg += "\n10.3: a = " + a + " ";
+            if (a < 0)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        function task4(a) {
+            msg += "\n10.4: a = " + a + " ";
+            if (a >= 0)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        function task5(a) {
+            msg += "\n10.5: a = " + a + " ";
+            if (a <= 0)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        function task6(a) {
+            msg += "\n10.6: a = " + a + " ";
+            if (a != 0)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        function task7(a) {
+            msg += "\n10.7: a = " + a + " ";
+            if (a == 'test')
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        function task8(a) {
+            msg += "\n10.8: a = " + a + " ";
+            let obj = new String;
+            if (a == '1' && (typeof a) == "string")
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        // Проверка функций в цикле
+        task1(a); task1(b); task1(c);
+        msg += '\n';
+        task2(a); task2(b); task2(c);
+        msg += '\n';
+        task3(a); task3(b); task3(c);
+        msg += '\n';
+        task4(a); task4(b); task4(c);
+        msg += '\n';
+        task5(a); task5(b); task5(c);
+        msg += '\n';
+        task6(a); task6(b); task6(c);
+        msg += '\n';
+        a = 'test'; b = 'тест'; c = 3;
+        task7(a); task7(b); task7(c);
+        msg += '\n';
+        a = '1'; b = 1; c = 3;
+        task8(a); task8(b); task8(c);
+        msg += '\n';
+
+        console.log(msg);
+
+    </script>
+</body>
+
+</html>

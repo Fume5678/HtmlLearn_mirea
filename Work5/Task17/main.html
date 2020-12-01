@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let msg = "";
+        let a = [2, 5, 9, 15, 0, 4];
+        let res = 0;
+        let bCheck = true;
+        let str = "";
+
+        msg += ("17.1: ")
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] > 3 && a[i] < 10) {
+                msg += a[i] + " ";
+            }
+        }
+
+        msg += ("\n17.2: ");
+        a = [2, -5, 9, -15, 0, -4];
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] > 0) {
+                res += a[i];
+            }
+        }
+        msg += res;
+
+        msg += ("\n17.3: ");
+        a = [1, 2, 5, 9, 4, 13, 4, 10];
+        bCheck = false;
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] == 4) {
+                bCheck = true;
+            }
+        }
+        msg += (bCheck) ? "Есть!" : "";
+
+        msg += ("\n17.4: ");
+        a = [10, 20, 30, 50, 235, 3000];
+        bCheck = false;
+        for (let i = 0; i < a.length; i++) {
+            let n = a[i];
+            while (n >= 10) {
+                n /= 10;
+            }
+
+            if (n == 1 || n == 2 || n == 5) {
+                msg += a[i] + " ";
+            }
+        }
+
+        msg += ("\n17.5: ");
+        a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        str = '-';
+        for (let i = 0; i < a.length; i++) {
+            str += i + "-";
+        }
+        msg += str;
+
+        msg += ("\n17.6: ");
+        a = ['Понедилок', "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскрессенье"];
+        for (let i = 0; i < a.length; i++) {
+            str = a[i];
+            if (i > 4) {
+                str = str.bold();
+            }
+            msg += " " + str;
+        }
+
+        msg += ("\n17.7: ");
+        let date = new Date;
+        let current = date.getDay();
+        a = ['Понедилок', "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскрессенье"];
+        for (let i = 0; i < a.length; i++) {
+            str = a[i];
+            if (i == current - 1) {
+                str = str.bold();
+            }
+            msg += " " + str;
+        }
+
+        msg += ("\n17.7: ");
+        res = 1000;
+        let num = 0;
+        while (res >= 50) {
+            res /= 2;
+            num++;
+        }
+        msg += res + " num = " + num;
+
+        console.log(msg);
+    </script>
+</body>
+
+</html>

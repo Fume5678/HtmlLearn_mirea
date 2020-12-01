@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var msg = ""; // Собираем одно большое сообщеия для вывода в консоль или алерт
+        var tr = "Верно";
+        var fl = "Неверно";
+        let a = 5;
+        let b = 0;
+        let c = -3;
+        let d = 2;
+        let e = 0;
+        let f = 0;
+
+        function task1(a) {
+            msg += "\n12.1: a = " + a + " ";
+            if (a > 0 && a < 5)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        function task2(a) {
+            msg += "\n12.2: a = " + a + " ";
+            if (a != 0 || a == 2)
+                msg += " a = " + (a + 7);
+            else
+                msg += " a = " + (a / 10);
+        }
+
+        function task3(a, b) {
+            msg += "\n12.3: a = " + a + " b = " + b + " ";
+            if (a <= 1 && b >= 3)
+                msg += " a + b = " + (a + b);
+            else
+                msg += " a - b = " + (a - b);
+        }
+
+        function task4(a, b) {
+            msg += "\n12.4: a = " + a + " b = " + b + " ";
+            if (a >= 2 && a < 11 || b >= 6 && b <= 14)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+
+        task1(a); task1(b); task1(c); task1(d);
+        msg += "\n";
+        task2(a); task2(b); task2(c); task2(d);
+        msg += "\n";
+        a = 1; b = 3;
+        c = 0; d = 6;
+        e = 3; f = 5;
+        task3(a, b); task3(c, d); task3(e, f);
+        msg += "\n";
+        task4(a, b); task4(c, d); task4(e, f);
+
+
+        console.log(msg);
+
+    </script>
+</body>
+
+</html>

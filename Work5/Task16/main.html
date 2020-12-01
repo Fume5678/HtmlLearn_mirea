@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obj = { green: 'зеленый', red: 'красный', blue: 'голубой' };
+
+        for (i in obj) {
+            console.log(i + " : " + obj[i]);
+        }
+
+        var obj2 = { 'Коля': '200', "Вася": '300', "Петя": '400' };
+
+        for (i in obj2) {
+            console.log(i + " - зарплата " + obj2[i] + " долларов");
+        }
+    </script>
+</body>
+
+</html>

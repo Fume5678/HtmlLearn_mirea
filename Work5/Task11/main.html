@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var msg = ""; // Собираем одно большое сообщеия для вывода в консоль или алерт
+        var tr = "Верно";
+        var fl = "Неверно";
+        let test = true;
+        let test2 = false;
+
+        function task1(a) {
+            msg += "\n11.1: a = " + a + " ";
+            if (a == true)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        function task2(a) {
+            msg += "\n11.2: a = " + a + " ";
+            if (a != true)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        function task1_2(a) {
+            msg += "\n11.1_2: a = " + a + " ";
+            if (a)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        function task1_2(a) {
+            msg += "\n11.2_2: a = " + a + " ";
+            if (!a)
+                msg += tr;
+            else
+                msg += fl;
+        }
+
+        task1(test); task1(test2);
+        msg += "\n";
+        task2(test); task2(test2);
+        msg += "\n Var 2\n";
+        task1(test); task1(test2);
+        msg += "\n";
+        task2(test); task2(test2);
+
+        console.log(msg);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let str = 'я учу javascript!';
+        console.log("9.1: " + str.length);
+
+        let str1 = str.substr(2, 3);
+        let str2 = str.substring(2, 5);
+        let str3 = str.slice(2, 5);
+
+        console.log("9.2: ");
+        console.log(str.substr(2, 3) + "," + str.substr(6, 10));
+        console.log(str.substring(2, 5) + "," + str.substring(6, 16));
+        console.log(str.slice(2, 5) + "," + str.slice(6, 16));
+
+        console.log("9.3: ");
+        console.log(str.search("учу"));
+
+        console.log("9.4: ");
+        str = "asdsadas dasd";
+        var n = 20;
+        var res = "";
+
+        if (str.length > n) {
+            res = str.substr(0, n) + "...";
+        } else {
+            res = str;
+        }
+        console.log(res);
+
+    </script>
+</body>
+
+</html>
